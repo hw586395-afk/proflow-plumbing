@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Plumbing Service and Repair | ProFlow Plumbing</title>
+
+  <meta
+    name="description"
+    content="ProFlow Plumbing provides professional plumbing service and repair, drain cleaning, leak detection, water heater service, sewer line repair, emergency plumbing and more."
+  >
+
+  <meta name="theme-color" content="#071827">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #14202b;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    /* =========================
+       TOP BAR
+    ========================= */
+
+    .topbar {
+      background: #06131f;
+      color: #fff;
+      padding: 9px 0;
+      font-size: 14px;
+    }
+
+    .topbar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .topbar-right {
+      font-weight: bold;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 27px;
+      font-weight: 900;
+      color: #071827;
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      color: #08a6d6;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #14202b;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .nav-links a:hover {
+      color: #08a6d6;
+    }
+
+    .header-phone {
+      background: #08a6d6;
+      color: #fff;
+      padding: 12px 19px;
+      border-radius: 6px;
+      font-weight: 800;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      color: #fff;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(4,17,29,0.94) 0%,
+          rgba(4,17,29,0.80) 45%,
+          rgba(4,17,29,0.35) 100%
+        ),
+        url("https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=2000&q=85")
+        center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 700px;
+      padding: 75px 0;
+    }
+
+    .hero-label {
+      display: inline-block;
+      color: #6ddcff;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 70px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: #18b9e8;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: #e3edf3;
+      max-width: 630px;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 24px;
+      border-radius: 6px;
+      font-weight: 800;
+      transition: 0.25s;
+    }
+
+    .btn-primary {
+      background: #08a6d6;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #078bb4;
+      transform: translateY(-2px);
+    }
+
+    .btn-white {
+      background: #fff;
+      color: #071827;
+    }
+
+    .btn-white:hover {
+      background: #eaf5f9;
+    }
+
+    /* =========================
+       TRUST STRIP
+    ========================= */
+
+    .trust-strip {
+      background: #08a6d6;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+
+    .trust-item {
+      font-weight: 800;
+    }
+
+    .trust-item span {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 3px;
+      opacity: .9;
+    }
+
+    /* =========================
+       SECTION
+    ========================= */
+
+    section {
+      padding: 85px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
+
+    .section-heading .small-title {
+      color: #08a6d6;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.15;
+      color: #071827;
+      margin-bottom: 14px;
+    }
+
+    .section-heading p {
+      color: #66727c;
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services {
+      background: #f5f9fb;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 1px solid #e4edf1;
+      padding: 30px 25px;
+      border-radius: 9px;
+      transition: .25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(5,38,55,.10);
+      border-color: #b9e7f4;
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #e8f8fc;
+      color: #078eb9;
+      border-radius: 8px;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 19px;
+      margin-bottom: 8px;
+      color: #071827;
+    }
+
+    .service-card p {
+      color: #6b7780;
+      font-size: 14px;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .about-badge {
+      position: absolute;
+      bottom: 25px;
+      left: 25px;
+      background: #071827;
+      color: #fff;
+      padding: 20px 25px;
+      border-radius: 7px;
+    }
+
+    .about-badge strong {
+      display: block;
+      color: #22c2ec;
+      font-size: 22px;
+    }
+
+    .about-content .small-title {
+      color: #08a6d6;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 13px;
+    }
+
+    .about-content h2 {
+      font-size: 43px;
+      line-height: 1.15;
+      margin: 10px 0 20px;
+      color: #071827;
+    }
+
+    .about-content p {
+      color: #66727c;
+      margin-bottom: 16px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 25px 0;
+    }
+
+    .check-list li {
+      margin: 11px 0;
+      font-weight: 700;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: #08a6d6;
+      margin-right: 10px;
+      font-weight: 900;
+    }
+
+    /* =========================
+       EMERGENCY
+    ========================= */
+
+    .emergency {
+      background:
+        linear-gradient(rgba(5,20,31,.91), rgba(5,20,31,.91)),
+        url("https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      color: #fff;
+    }
+
+    .emergency-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .emergency h2 {
+      font-size: 42px;
+      line-height: 1.15;
+      margin-bottom: 13px;
+    }
+
+    .emergency p {
+      color: #c9d5dc;
+      max-width: 680px;
+    }
+
+    .emergency-phone {
+      background: #08a6d6;
+      color: #fff;
+      padding: 18px 27px;
+      border-radius: 7px;
+      font-size: 20px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    /* =========================
+       WHY CHOOSE US
+    ========================= */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .why-card {
+      padding: 32px 27px;
+      border: 1px solid #e4edf1;
+      border-radius: 9px;
+    }
+
+    .why-number {
+      font-size: 14px;
+      color: #08a6d6;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+
+    .why-card h3 {
+      margin-bottom: 10px;
+      color: #071827;
+    }
+
+    .why-card p {
+      color: #697780;
+      font-size: 14px;
+    }
+
+    /* =========================
+       REVIEWS
+    ========================= */
+
+    .reviews {
+      background: #f5f9fb;
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .review-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 9px;
+      border: 1px solid #e3edf1;
+    }
+
+    .stars {
+      color: #f5aa18;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+
+    .review-card p {
+      color: #56646d;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .review-name {
+      font-weight: 900;
+      color: #071827;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      background: #08a6d6;
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 44px;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .cta p {
+      margin-bottom: 25px;
+      color: #e9faff;
+    }
+
+    .cta .btn {
+      background: #071827;
+      color: #fff;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .contact-card {
+      background: #f5f9fb;
+      padding: 38px;
+      border-radius: 10px;
+    }
+
+    .contact-card h3 {
+      font-size: 27px;
+      color: #071827;
+      margin-bottom: 22px;
+    }
+
+    .contact-row {
+      margin: 20px 0;
+    }
+
+    .contact-row strong {
+      display: block;
+      color: #071827;
+      margin-bottom: 3px;
+    }
+
+    .contact-row a {
+      color: #08a6d6;
+      font-size: 19px;
+      font-weight: 900;
+    }
+
+    .contact-row span {
+      color: #64727b;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #06131f;
+      color: #9daab3;
+      padding: 35px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footer-logo {
+      color: #fff;
+      font-size: 23px;
+      font-weight: 900;
+    }
+
+    .footer-logo span {
+      color: #08a6d6;
+    }
+
+    .footer-phone {
+      color: #fff;
+      font-weight: 800;
+    }
+
+    /* =========================
+       MOBILE CALL BUTTON
+    ========================= */
+
+    .mobile-call {
+      display: none;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .service-grid,
+      .why-grid,
+      .review-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .emergency-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .emergency-phone {
+        width: fit-content;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .topbar {
+        display: none;
+      }
+
+      .navbar {
+        min-height: 68px;
+      }
+
+      .logo {
+        font-size: 22px;
+      }
+
+      .header-phone {
+        padding: 9px 12px;
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 650px;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .trust-grid,
+      .service-grid,
+      .why-grid,
+      .review-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .about-content h2 {
+        font-size: 34px;
+      }
+
+      .about-image img {
+        height: 400px;
+      }
+
+      .emergency h2 {
+        font-size: 34px;
+      }
+
+      .emergency-phone {
+        width: 100%;
+        text-align: center;
+      }
+
+      .cta h2 {
+        font-size: 34px;
+      }
+
+      .contact-card {
+        padding: 27px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .mobile-call {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: #08a6d6;
+        color: #fff;
+        text-align: center;
+        padding: 14px;
+        font-weight: 900;
+        box-shadow: 0 -4px 15px rgba(0,0,0,.18);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div>Professional Plumbing Service & Repair</div>
+      <div class="topbar-right">
+        Call Now: 844-960-4987
+      </div>
+    </div>
+  </div>
+
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container navbar">
+
+      <a href="#home" class="logo">
+        ProFlow <span>Plumbing</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="tel:18449604987" class="header-phone">
+        ☎ 844-960-4987
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <div class="hero-label">
+          Professional Plumbing Services
+        </div>
+
+        <h1>
+          Plumbing Service<br>
+          <span>You Can Count On.</span>
+        </h1>
+
+        <p>
+          From everyday plumbing repairs to urgent emergencies,
+          ProFlow Plumbing delivers dependable service and quality
+          solutions for your home or property.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="tel:18449604987" class="btn btn-primary">
+            ☎ Call 844-960-4987
+          </a>
+
+          <a href="#services" class="btn btn-white">
+            View Our Services
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TRUST -->
+
+  <div class="trust-strip">
+
+    <div class="container trust-grid">
+
+      <div class="trust-item">
+        ✓ Professional Service
+        <span>Quality plumbing solutions</span>
+      </div>
+
+      <div class="trust-item">
+        ✓ Reliable Support
+        <span>We're here when you need us</span>
+      </div>
+
+      <div class="trust-item">
+        ✓ Experienced Team
+        <span>Focused on quality work</span>
+      </div>
+
+      <div class="trust-item">
+        ✓ Emergency Plumbing
+        <span>Help for urgent plumbing issues</span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- SERVICES -->
+
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="small-title">
+          Our Services
+        </div>
+
+        <h2>
+          Complete Plumbing Services
+        </h2>
+
+        <p>
+          Professional solutions for repairs, maintenance,
+          installations and plumbing emergencies.
+        </p>
+
+      </div>
+
+
+      <div class="service-grid">
+
+        <div class="service-card">
+          <div class="service-icon">⌁</div>
+          <h3>Drain Cleaning</h3>
+          <p>Clear slow and clogged drains and help restore proper flow.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">◉</div>
+          <h3>Leak Detection & Repair</h3>
+          <p>Find plumbing leaks and provide dependable repair solutions.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">⚙</div>
+          <h3>Pipe Repair & Replacement</h3>
+          <p>Repair damaged pipes or replace worn plumbing when needed.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">▰</div>
+          <h3>Sewer Line Services</h3>
+          <p>Professional sewer line inspection, repair and service.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">♨</div>
+          <h3>Water Heater Services</h3>
+          <p>Water heater service, repair and replacement solutions.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🚽</div>
+          <h3>Toilet Repair & Installation</h3>
+          <p>Toilet repairs, replacements and professional installations.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💧</div>
+          <h3>Faucet & Sink Services</h3>
+          <p>Repair, replacement and installation for faucets and sinks.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">⚙</div>
+          <h3>Garbage Disposal Services</h3>
+          <p>Repair and replacement of kitchen garbage disposals.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">◈</div>
+          <h3>Sump Pump Services</h3>
+          <p>Service and replacement solutions for sump pump systems.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🔥</div>
+          <h3>Gas Line Services</h3>
+          <p>Professional gas line service for plumbing-related needs.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💦</div>
+          <h3>Water Line Services</h3>
+          <p>Water line repair, replacement and plumbing solutions.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">≋</div>
+          <h3>Hydro Jetting</h3>
+          <p>High-pressure cleaning designed to clear stubborn buildup.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">↔</div>
+          <h3>Backflow Prevention</h3>
+          <p>Plumbing solutions designed to help protect your water supply.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">!</div>
+          <h3>Emergency Plumbing</h3>
+          <p>Contact ProFlow Plumbing when you have an urgent plumbing issue.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="container about-grid">
+
+      <div class="about-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=85"
+          alt="Professional plumber working on plumbing equipment"
+        >
+
+        <div class="about-badge">
+          <strong>ProFlow</strong>
+          Plumbing Service
+        </div>
+
+      </div>
+
+
+      <div class="about-content">
+
+        <div class="small-title">
+          Why ProFlow Plumbing
+        </div>
+
+        <h2>
+          Professional Plumbing. Straightforward Service.
+        </h2>
+
+        <p>
+          Plumbing problems can interrupt your entire day.
+          ProFlow Plumbing is focused on providing dependable
+          plumbing service and practical repair solutions.
+        </p>
+
+        <p>
+          Whether you are dealing with a clogged drain, leaking pipe,
+          water heater issue or an urgent plumbing problem, our goal
+          is to make the process simple and stress-free.
+        </p>
+
+        <ul class="check-list">
+          <li>Professional plumbing solutions</li>
+          <li>Reliable customer service</li>
+          <li>Residential plumbing services</li>
+          <li>Emergency plumbing assistance</li>
+          <li>Wide range of plumbing services</li>
+        </ul>
+
+        <a href="tel:18449604987" class="btn btn-primary">
+          Call ProFlow Plumbing
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EMERGENCY -->
+
+  <section class="emergency">
+
+    <div class="container emergency-grid">
+
+      <div>
+
+        <h2>
+          Have a Plumbing Emergency?
+        </h2>
+
+        <p>
+          Don't let a plumbing problem become a bigger problem.
+          Call ProFlow Plumbing and discuss your plumbing needs
+          with our team.
+        </p>
+
+      </div>
+
+      <a href="tel:18449604987" class="emergency-phone">
+        ☎ 844-960-4987
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY CHOOSE US -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="small-title">
+          The ProFlow Difference
+        </div>
+
+        <h2>
+          Why Choose ProFlow Plumbing?
+        </h2>
+
+        <p>
+          A professional approach from the first call to the completed job.
+        </p>
+
+      </div>
+
+
+      <div class="why-grid">
+
+        <div class="why-card">
+
+          <div class="why-number">
+            01 — RELIABLE
+          </div>
+
+          <h3>
+            Dependable Service
+          </h3>
+
+          <p>
+            We understand how important it is to get plumbing
+            problems addressed quickly and professionally.
+          </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+          <div class="why-number">
+            02 — PROFESSIONAL
+          </div>
+
+          <h3>
+            Quality-Focused Work
+          </h3>
+
+          <p>
+            Our approach is centered around practical solutions,
+            attention to detail and quality service.
+          </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+          <div class="why-number">
+            03 — CONVENIENT
+          </div>
+
+          <h3>
+            One Call Away
+          </h3>
+
+          <p>
+            From routine repairs to urgent plumbing issues,
+            one phone call gets the process started.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- REVIEWS -->
+
+  <section class="reviews" id="reviews">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="small-title">
+          Customer Experience
+        </div>
+
+        <h2>
+          What Customers Look For
+        </h2>
+
+        <p>
+          Professionalism, communication and dependable plumbing service.
+        </p>
+
+      </div>
+
+
+      <div class="review-grid">
+
+        <div class="review-card">
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+          <p>
+            “Professional, responsive and easy to work with.
+            The plumbing issue was handled efficiently.”
+          </p>
+
+          <div class="review-name">
+            — Homeowner
+          </div>
+
+        </div>
+
+
+        <div class="review-card">
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+          <p>
+            “Great communication and professional service.
+            I would definitely call again when I need plumbing help.”
+          </p>
+
+          <div class="review-name">
+            — Customer
+          </div>
+
+        </div>
+
+
+        <div class="review-card">
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+          <p>
+            “The service was straightforward and professional.
+            Everything was explained clearly.”
+          </p>
+
+          <div class="review-name">
+            — Homeowner
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>
+        Ready to Solve Your Plumbing Problem?
+      </h2>
+
+      <p>
+        Call ProFlow Plumbing today to discuss your plumbing service needs.
+      </p>
+
+      <a href="tel:18449604987" class="btn">
+        Call 844-960-4987
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="small-title">
+          Contact ProFlow Plumbing
+        </div>
+
+        <h2>
+          Let's Talk About Your Plumbing Needs
+        </h2>
+
+        <p>
+          Call us directly for service information and assistance.
+        </p>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+
+          <h3>
+            Contact Information
+          </h3>
+
+          <div class="contact-row">
+
+            <strong>Phone</strong>
+
+            <a href="tel:18449604987">
+              844-960-4987
+            </a>
+
+          </div>
+
+
+          <div class="contact-row">
+
+            <strong>Service Area</strong>
+
+            <span>
+              Serving customers across the United States
+            </span>
+
+          </div>
+
+
+          <div class="contact-row">
+
+            <strong>Services</strong>
+
+            <span>
+              Residential plumbing service, repair,
+              installation and emergency plumbing.
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <h3>
+            Need Plumbing Service?
+          </h3>
+
+          <p style="color:#64727b; margin-bottom:25px;">
+            Call ProFlow Plumbing directly to discuss your
+            plumbing problem and service needs.
+          </p>
+
+          <a href="tel:18449604987" class="btn btn-primary">
+            ☎ Call 844-960-4987
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container footer-content">
+
+      <div class="footer-logo">
+        ProFlow <span>Plumbing</span>
+      </div>
+
+      <div>
+        © 2026 ProFlow Plumbing. All Rights Reserved.
+      </div>
+
+      <a href="tel:18449604987" class="footer-phone">
+        844-960-4987
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- MOBILE CALL BUTTON -->
+
+  <a href="tel:18449604987" class="mobile-call">
+    ☎ CALL PROFLOW PLUMBING — 844-960-4987
+  </a>
+
+</body>
+</html>
