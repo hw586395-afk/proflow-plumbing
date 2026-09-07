@@ -1,0 +1,18 @@
+
+:root{--navy:#071827;--blue:#09a9dc;--light:#f4f8fb;--text:#203244;--muted:#647589;--border:#dbe6ee}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+.topbar{background:var(--navy);color:#fff;font-size:14px}.topbar .container{display:flex;justify-content:space-between;padding:9px 0}
+header{background:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #e7edf2}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:900;color:var(--navy)}.logo span{color:var(--blue)}.navlinks{display:flex;gap:25px;font-weight:700;font-size:14px}.call,.btn{background:var(--blue);color:#fff;padding:13px 19px;border-radius:6px;font-weight:800}
+.hero{min-height:600px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(3,18,32,.96),rgba(3,18,32,.72) 45%,rgba(3,18,32,.12)),url("plumber-hero.png") center/cover;color:#fff}
+.hero h1{font-size:clamp(43px,6vw,72px);line-height:1.02;margin:12px 0}.hero h1 span{color:#14b8e9}.eyebrow{color:#14b8e9;font-weight:900;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+.hero p{max-width:680px;font-size:18px;color:#e9f2f7}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-block}.btn.secondary{background:#fff;color:var(--navy)}
+.trust{background:var(--blue);color:#fff}.trust .container{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:22px 0}.trust strong{display:block}.trust small{opacity:.9}
+section{padding:80px 0}.alt{background:var(--light)}.section-head{text-align:center;max-width:760px;margin:0 auto 42px}.section-head h2{font-size:42px;line-height:1.15;margin:10px 0}.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:25px;box-shadow:0 10px 25px #0718270b}.card h3{margin:8px 0;color:var(--navy)}.icon{color:var(--blue);font-size:22px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.photo{width:100%;border-radius:12px}.check{font-weight:700}.check span{color:var(--blue);margin-right:8px}
+.citybox{background:var(--navy);padding:32px;border-radius:14px}.citygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.citylink{background:#102a40;color:#dff7ff;padding:11px;border-radius:6px;font-weight:700}
+.cta{background:linear-gradient(135deg,var(--blue),#087eac);color:#fff;text-align:center}.cta h2{font-size:42px;margin:0 0 10px}.cta .btn{background:var(--navy)}
+footer{background:var(--navy);color:#d8e4ed;padding:45px 0 80px}.footergrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}.footergrid h3{color:#fff}.mobile-call{display:none}
+@media(max-width:800px){.navlinks{display:none}.topbar .container{justify-content:center}.topbar span{display:none}.hero{min-height:650px}.grid,.trust .container,.split,.footergrid{grid-template-columns:1fr}.citygrid{grid-template-columns:repeat(2,1fr)}section{padding:60px 0}.section-head h2,.cta h2{font-size:34px}.mobile-call{display:block;position:fixed;bottom:14px;left:4%;right:4%;z-index:99;background:var(--blue);color:#fff;text-align:center;padding:15px;border-radius:8px;font-weight:900}}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hw586395-afk.github.io/proflow-plumbing/sitemap.xml
