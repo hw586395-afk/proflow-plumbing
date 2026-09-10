@@ -41,6 +41,7 @@
 
 <body>
 
+  <!-- TOP BAR -->
   <div class="topbar">
     <div class="container topbar-inner">
       <span>Professional Plumbing Service & Repair</span>
@@ -48,6 +49,7 @@
     </div>
   </div>
 
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container nav">
 
@@ -71,6 +73,7 @@
 
   <main>
 
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-overlay"></div>
 
@@ -93,7 +96,7 @@
 
           <div class="call-action">
             <a class="btn primary" href="tel:18449604987">
-              ☎ Call 844-960-4987
+              ☎ Call Now: 844-960-4987
             </a>
 
             <p class="call-note">
@@ -102,8 +105,8 @@
             </p>
           </div>
 
-          <a class="btn outline" href="#services">
-            Explore Services
+          <a class="btn outline" href="#contact">
+            Get Free Estimate
           </a>
 
         </div>
@@ -117,6 +120,7 @@
       </div>
     </section>
 
+    <!-- TRUST -->
     <section class="trust-strip">
       <div class="container trust-grid">
 
@@ -155,6 +159,7 @@
       </div>
     </section>
 
+    <!-- SERVICES -->
     <section id="services" class="section services-section">
       <div class="container">
 
@@ -257,6 +262,7 @@
       </div>
     </section>
 
+    <!-- WHY US -->
     <section id="why" class="section why-section">
       <div class="container why-grid">
 
@@ -321,20 +327,23 @@
 
           </div>
 
-          <a class="btn primary dark-btn" href="tel:18449604987">
-            Call ProFlow Plumbing
+          <a class="btn primary dark-btn" href="#contact">
+            Get Free Estimate
           </a>
 
         </div>
       </div>
     </section>
 
+    <!-- SERVICE AREAS -->
     <section id="areas" class="section areas-section">
       <div class="container">
 
         <div class="section-heading light-heading">
           <div class="eyebrow">Service Areas</div>
+
           <h2>Find Plumbing Services Near You</h2>
+
           <p>
             Explore the service-area pages below. Service availability
             should be confirmed before scheduling.
@@ -368,26 +377,232 @@
       </div>
     </section>
 
-    <section id="contact" class="section emergency-section">
-      <div class="container emergency-inner">
+    <!-- CONTACT / LEAD FORM -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
 
-        <div>
-          <div class="eyebrow">Need Plumbing Help?</div>
-          <h2>Let's Talk About Your Plumbing Problem</h2>
+        <div class="section-heading">
+          <div class="eyebrow">Get a Free Estimate</div>
+
+          <h2>Tell Us What Plumbing Work You Need</h2>
+
           <p>
-            Call ProFlow Plumbing to discuss your repair,
-            installation or emergency plumbing needs.
+            Send us a few details about your plumbing project
+            and our team can review your request.
           </p>
         </div>
 
-        <div class="emergency-call">
-          <a class="btn emergency-btn" href="tel:18449604987">
-            ☎ Call 844-960-4987
-          </a>
+        <div class="contact-grid">
 
-          <p class="emergency-note">
-            Please stay on the line for up to 60 seconds while your call connects.
-          </p>
+          <!-- CONTACT INFO -->
+          <div class="contact-info">
+
+            <div class="eyebrow">ProFlow Plumbing</div>
+
+            <h2>Need a Plumber?</h2>
+
+            <p>
+              Whether you need a repair, installation, maintenance,
+              or emergency plumbing service, we're ready to help.
+            </p>
+
+            <div class="contact-card">
+              <span>CALL US</span>
+              <a href="tel:18449604987">
+                844-960-4987
+              </a>
+            </div>
+
+            <div class="contact-card">
+              <span>SERVICE</span>
+              <strong>
+                Professional Plumbing Services
+              </strong>
+            </div>
+
+            <div class="contact-card">
+              <span>AVAILABILITY</span>
+              <strong>
+                Emergency Plumbing Available
+              </strong>
+            </div>
+
+          </div>
+
+          <!-- LEAD FORM -->
+          <form
+            class="lead-form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+          >
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New ProFlow Plumbing Estimate Request"
+            >
+
+            <div class="form-row">
+
+              <div class="form-group">
+                <label for="name">
+                  Full Name *
+                </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  autocomplete="name"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="phone">
+                  Phone Number *
+                </label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Your phone number"
+                  autocomplete="tel"
+                  required
+                >
+              </div>
+
+            </div>
+
+            <div class="form-row">
+
+              <div class="form-group">
+                <label for="zip">
+                  ZIP Code *
+                </label>
+
+                <input
+                  type="text"
+                  id="zip"
+                  name="zip"
+                  placeholder="ZIP code"
+                  inputmode="numeric"
+                  autocomplete="postal-code"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="service">
+                  Service Needed *
+                </label>
+
+                <select
+                  id="service"
+                  name="service"
+                  required
+                >
+                  <option value="">
+                    Select a service
+                  </option>
+
+                  <option value="Drain Cleaning">
+                    Drain Cleaning
+                  </option>
+
+                  <option value="Leak Detection & Repair">
+                    Leak Detection & Repair
+                  </option>
+
+                  <option value="Pipe Repair & Replacement">
+                    Pipe Repair & Replacement
+                  </option>
+
+                  <option value="Sewer Line Services">
+                    Sewer Line Services
+                  </option>
+
+                  <option value="Water Heater Services">
+                    Water Heater Services
+                  </option>
+
+                  <option value="Toilet Repair & Installation">
+                    Toilet Repair & Installation
+                  </option>
+
+                  <option value="Faucet & Sink Services">
+                    Faucet & Sink Services
+                  </option>
+
+                  <option value="Garbage Disposal Services">
+                    Garbage Disposal Services
+                  </option>
+
+                  <option value="Sump Pump Services">
+                    Sump Pump Services
+                  </option>
+
+                  <option value="Gas Line Services">
+                    Gas Line Services
+                  </option>
+
+                  <option value="Water Line Services">
+                    Water Line Services
+                  </option>
+
+                  <option value="Hydro Jetting">
+                    Hydro Jetting
+                  </option>
+
+                  <option value="Backflow Prevention">
+                    Backflow Prevention
+                  </option>
+
+                  <option value="Emergency Plumbing">
+                    Emergency Plumbing
+                  </option>
+
+                  <option value="Other">
+                    Other
+                  </option>
+
+                </select>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+
+              <label for="message">
+                Tell Us About Your Project
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Describe the plumbing work you need..."
+              ></textarea>
+
+            </div>
+
+            <button
+              type="submit"
+              class="btn primary form-submit"
+            >
+              Request Free Estimate
+            </button>
+
+            <p class="form-note">
+              By submitting this form, you are requesting information
+              about plumbing services. A team member may contact you
+              regarding your request.
+            </p>
+
+          </form>
+
         </div>
 
       </div>
@@ -395,6 +610,7 @@
 
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <div class="container footer-grid">
 
@@ -420,10 +636,17 @@
 
       <div>
         <h3>Contact</h3>
-        <a class="footer-phone" href="tel:18449604987">
+
+        <a
+          class="footer-phone"
+          href="tel:18449604987"
+        >
           844-960-4987
         </a>
-        <p>Professional Plumbing Service & Repair</p>
+
+        <p>
+          Professional Plumbing Service & Repair
+        </p>
       </div>
 
     </div>
@@ -433,9 +656,24 @@
     </div>
   </footer>
 
-  <a class="mobile-call" href="tel:18449604987">
-    ☎ Call ProFlow Plumbing — 844-960-4987
-  </a>
+  <!-- MOBILE FIXED BUTTONS -->
+  <div class="mobile-call">
+
+    <a
+      class="mobile-call-btn"
+      href="tel:18449604987"
+    >
+      ☎ Call Now
+    </a>
+
+    <a
+      class="mobile-estimate-btn"
+      href="#contact"
+    >
+      Get Estimate
+    </a>
+
+  </div>
 
 </body>
 </html>
