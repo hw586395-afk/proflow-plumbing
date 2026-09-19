@@ -1,3 +1,5 @@
+<!doctype html>
+<html lang="en-US">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,7 +8,7 @@
 
   <meta name="description" content="ProFlow Plumbing provides professional plumbing services including drain cleaning, leak repair, pipe repair, sewer services, water heaters, toilet repair and emergency plumbing. Call 844-960-4987.">
 
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index,follow">
 
   <link rel="canonical" href="https://hw586395-afk.github.io/proflow-plumbing/">
 
@@ -23,8 +25,6 @@
 
   <meta name="google-site-verification" content="nyeMxZIOTppE_Cqt9_zFsvzNc6mZbV0nyPIECR48IoA">
 
-  <link rel="stylesheet" href="styles.css">
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,7 +33,890 @@
     "url": "https://hw586395-afk.github.io/proflow-plumbing/",
     "telephone": "+1-844-960-4987",
     "logo": "https://hw586395-afk.github.io/proflow-plumbing/plumber-hero.png",
-    "description": "Professional plumbing services and repair including drain cleaning, leak repair, pipe repair, sewer services, water heaters and emergency plumbing."
+    "description": "Professional plumbing services and repair."
   }
   </script>
+
+  <style>
+    :root{
+      --navy:#071525;
+      --navy2:#0d2239;
+      --blue:#168cff;
+      --blue2:#0b6fd3;
+      --text:#172033;
+      --muted:#617084;
+      --light:#f4f8fc;
+      --white:#fff;
+      --border:#dfe8f1
+    }
+
+    *{
+      box-sizing:border-box
+    }
+
+    html{
+      scroll-behavior:smooth
+    }
+
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      color:var(--text);
+      background:#fff;
+      line-height:1.6
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit
+    }
+
+    .topbar{
+      background:#06111f;
+      color:#dbeafe;
+      padding:9px 20px;
+      text-align:center;
+      font-size:14px
+    }
+
+    .topbar a{
+      color:#fff;
+      font-weight:700
+    }
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,255,255,.97);
+      border-bottom:1px solid var(--border);
+      backdrop-filter:blur(8px)
+    }
+
+    .nav{
+      max-width:1180px;
+      margin:auto;
+      min-height:74px;
+      padding:0 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px
+    }
+
+    .brand{
+      font-size:23px;
+      font-weight:900;
+      color:var(--navy);
+      letter-spacing:-.5px
+    }
+
+    .brand span{
+      color:var(--blue)
+    }
+
+    nav{
+      display:flex;
+      align-items:center;
+      gap:25px;
+      font-weight:700;
+      font-size:14px
+    }
+
+    nav a:hover{
+      color:var(--blue)
+    }
+
+    .nav-call,
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:9px;
+      font-weight:800
+    }
+
+    .nav-call{
+      background:var(--blue);
+      color:#fff;
+      padding:11px 17px
+    }
+
+    .hero{
+      background:
+        linear-gradient(110deg,rgba(5,18,32,.97),rgba(7,31,54,.82)),
+        url('plumber-hero.png') center/cover no-repeat;
+      color:#fff
+    }
+
+    .hero-inner{
+      max-width:1180px;
+      margin:auto;
+      padding:92px 20px 86px;
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:50px;
+      align-items:center
+    }
+
+    .eyebrow{
+      display:inline-block;
+      color:#75c2ff;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:1.5px;
+      font-size:13px;
+      margin-bottom:12px
+    }
+
+    h1{
+      font-size:clamp(40px,6vw,68px);
+      line-height:1.04;
+      margin:0 0 22px;
+      letter-spacing:-2px
+    }
+
+    .hero p{
+      font-size:19px;
+      color:#d8e6f5;
+      max-width:650px;
+      margin:0 0 27px
+    }
+
+    .buttons{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px
+    }
+
+    .btn{
+      padding:14px 21px;
+      border:2px solid transparent
+    }
+
+    .btn-primary{
+      background:var(--blue);
+      color:#fff
+    }
+
+    .btn-primary:hover{
+      background:var(--blue2)
+    }
+
+    .btn-outline{
+      border-color:#7bbef5;
+      color:#fff
+    }
+
+    .call-note{
+      font-size:13px;
+      color:#b9cde0;
+      margin-top:14px;
+      max-width:560px
+    }
+
+    .hero-card{
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:18px;
+      padding:27px
+    }
+
+    .hero-card h2{
+      margin:0 0 14px;
+      font-size:23px
+    }
+
+    .hero-card ul{
+      list-style:none;
+      padding:0;
+      margin:0
+    }
+
+    .hero-card li{
+      padding:9px 0;
+      border-bottom:1px solid rgba(255,255,255,.12);
+      color:#e8f2fb
+    }
+
+    .hero-card li:last-child{
+      border:0
+    }
+
+    .trust{
+      background:#fff;
+      border-bottom:1px solid var(--border)
+    }
+
+    .trust-inner{
+      max-width:1180px;
+      margin:auto;
+      padding:18px 20px;
+      display:flex;
+      justify-content:space-between;
+      gap:15px;
+      flex-wrap:wrap;
+      font-size:14px;
+      font-weight:700;
+      color:#44546a
+    }
+
+    section{
+      padding:78px 20px
+    }
+
+    .section-inner{
+      max-width:1180px;
+      margin:auto
+    }
+
+    .section-head{
+      text-align:center;
+      max-width:760px;
+      margin:0 auto 42px
+    }
+
+    .section-head h2{
+      font-size:38px;
+      line-height:1.15;
+      margin:0 0 12px;
+      color:var(--navy)
+    }
+
+    .section-head p{
+      margin:0;
+      color:var(--muted)
+    }
+
+    .services{
+      background:var(--light)
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px
+    }
+
+    .service{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:13px;
+      padding:23px;
+      transition:.2s
+    }
+
+    .service:hover{
+      transform:translateY(-3px);
+      box-shadow:0 10px 25px rgba(11,35,60,.08)
+    }
+
+    .icon{
+      width:42px;
+      height:42px;
+      border-radius:10px;
+      background:#e7f3ff;
+      color:var(--blue);
+      display:grid;
+      place-items:center;
+      font-weight:900;
+      margin-bottom:14px
+    }
+
+    .service h3{
+      margin:0 0 7px;
+      font-size:18px
+    }
+
+    .service p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px
+    }
+
+    .why{
+      background:#fff
+    }
+
+    .why-grid{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:55px;
+      align-items:center
+    }
+
+    .why-image{
+      min-height:390px;
+      border-radius:20px;
+      background:
+        linear-gradient(rgba(6,20,35,.15),rgba(6,20,35,.15)),
+        url('plumber-hero.png') center/cover
+    }
+
+    .why h2{
+      font-size:40px;
+      line-height:1.15;
+      margin:0 0 15px;
+      color:var(--navy)
+    }
+
+    .why p{
+      color:var(--muted)
+    }
+
+    .checks{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+      margin-top:25px
+    }
+
+    .check{
+      font-weight:700;
+      padding:12px 14px;
+      background:var(--light);
+      border-radius:9px
+    }
+
+    .areas{
+      background:var(--light)
+    }
+
+    .area-grid{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:12px
+    }
+
+    .area{
+      background:#fff;
+      border:1px solid var(--border);
+      padding:14px;
+      border-radius:9px;
+      text-align:center;
+      font-weight:800
+    }
+
+    .area:hover{
+      border-color:var(--blue);
+      color:var(--blue)
+    }
+
+    .cta{
+      background:linear-gradient(115deg,var(--navy),var(--navy2));
+      color:#fff;
+      text-align:center
+    }
+
+    .cta h2{
+      font-size:40px;
+      line-height:1.15;
+      margin:0 0 12px
+    }
+
+    .cta p{
+      color:#cfe0ef;
+      max-width:720px;
+      margin:0 auto 24px
+    }
+
+    footer{
+      background:#040d17;
+      color:#9eb0c3;
+      padding:30px 20px
+    }
+
+    .footer-inner{
+      max-width:1180px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap
+    }
+
+    .footer-brand{
+      font-weight:900;
+      color:#fff;
+      font-size:20px
+    }
+
+    .mobile-call{
+      display:none
+    }
+
+    @media(max-width:900px){
+      nav{
+        display:none
+      }
+
+      .hero-inner,
+      .why-grid{
+        grid-template-columns:1fr
+      }
+
+      .grid{
+        grid-template-columns:repeat(2,1fr)
+      }
+
+      .area-grid{
+        grid-template-columns:repeat(3,1fr)
+      }
+
+      .hero-inner{
+        padding:70px 20px
+      }
+
+      .why-image{
+        min-height:300px
+      }
+    }
+
+    @media(max-width:600px){
+      .nav{
+        min-height:64px
+      }
+
+      .brand{
+        font-size:20px
+      }
+
+      .nav-call{
+        padding:9px 12px;
+        font-size:13px
+      }
+
+      .hero-inner{
+        padding:58px 18px
+      }
+
+      .hero p{
+        font-size:17px
+      }
+
+      h1{
+        letter-spacing:-1px
+      }
+
+      section{
+        padding:58px 18px
+      }
+
+      .section-head h2,
+      .why h2,
+      .cta h2{
+        font-size:31px
+      }
+
+      .grid{
+        grid-template-columns:1fr
+      }
+
+      .area-grid{
+        grid-template-columns:repeat(2,1fr)
+      }
+
+      .checks{
+        grid-template-columns:1fr
+      }
+
+      .trust-inner{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        font-size:12px
+      }
+
+      body{
+        padding-bottom:64px
+      }
+
+      .mobile-call{
+        display:block;
+        position:fixed;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:100;
+        background:var(--blue);
+        color:#fff;
+        text-align:center;
+        padding:14px;
+        font-weight:900
+      }
+    }
+  </style>
 </head>
+
+<body>
+
+  <div class="topbar">
+    Professional Plumbing Service &amp; Repair
+    &nbsp;•&nbsp;
+    <a href="tel:+18449604987">Call 844-960-4987</a>
+  </div>
+
+  <header>
+    <div class="nav">
+
+      <a class="brand" href="./">
+        Pro<span>Flow</span> Plumbing
+      </a>
+
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#why">Why ProFlow</a>
+        <a href="#areas">Service Areas</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="nav-call" href="tel:+18449604987">
+        Call 844-960-4987
+      </a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-inner">
+
+        <div>
+
+          <div class="eyebrow">
+            Professional Plumbing Services
+          </div>
+
+          <h1>
+            Reliable Plumbing. Professional Service.
+          </h1>
+
+          <p>
+            Professional plumbing service and repair for common residential plumbing needs, from drain cleaning and leaks to pipes, water heaters, sewer lines and more.
+          </p>
+
+          <div class="buttons">
+
+            <a class="btn btn-primary" href="tel:+18449604987">
+              Call 844-960-4987
+            </a>
+
+            <a class="btn btn-outline" href="#services">
+              Explore Services
+            </a>
+
+          </div>
+
+          <div class="call-note">
+            Please stay on the line for up to 60 seconds while your call connects. You may be asked for your ZIP code to verify service availability.
+          </div>
+
+        </div>
+
+        <div class="hero-card">
+
+          <h2>Plumbing Services</h2>
+
+          <ul>
+
+            <li>Drain Cleaning &amp; Leak Repair</li>
+
+            <li>Pipe &amp; Sewer Line Services</li>
+
+            <li>Water Heater Services</li>
+
+            <li>Toilet, Faucet &amp; Sink Repair</li>
+
+            <li>Emergency Plumbing Service</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <div class="trust">
+
+      <div class="trust-inner">
+
+        <span>✓ Professional Service</span>
+        <span>✓ Plumbing Repair</span>
+        <span>✓ Multiple Service Areas</span>
+        <span>✓ Call for Availability</span>
+
+      </div>
+
+    </div>
+
+    <section id="services" class="services">
+
+      <div class="section-inner">
+
+        <div class="section-head">
+
+          <h2>Plumbing Services</h2>
+
+          <p>
+            Explore common plumbing services offered through ProFlow Plumbing.
+          </p>
+
+        </div>
+
+        <div class="grid">
+
+          <article class="service">
+            <div class="icon">01</div>
+            <h3>Drain Cleaning</h3>
+            <p>Help with clogged and slow drains.</p>
+          </article>
+
+          <article class="service">
+            <div class="icon">02</div>
+            <h3>Leak Detection &amp; Repair</h3>
+            <p>Repair support for common plumbing leaks.</p>
+          </article>
+
+          <article class="service">
+            <div class="icon">03</div>
+            <h3>Pipe Repair &amp; Replacement</h3>
+            <p>Pipe repair and replacement services.</p>
+          </article>
+
+          <article class="service">
+            <div class="icon">04</div>
+            <h3>Sewer Line Services</h3>
+            <p>Service for sewer line plumbing needs.</p>
+          </article>
+
+          <article class="service">
+            <div class="icon">05</div>
+            <h3>Water Heater Services</h3>
+            <p>Water heater repair and service.</p>
+          </article>
+
+          <article class="service">
+            <div class="icon">06</div>
+            <h3>Toilet Repair &amp; Installation</h3>
+            <p>Toilet repair and installation assistance.</p>
+          </article>
+
+          <article class="service">
+            <div class="icon">07</div>
+            <h3>Faucet &amp; Sink Services</h3>
+            <p>Faucet and sink repair and service.</p>
+          </article>
+
+          <article class="service">
+            <div class="icon">08</div>
+            <h3>Garbage Disposal Services</h3>
+            <p>Garbage disposal service and repair.</p>
+          </article>
+
+          <article class="service">
+            <div class="icon">09</div>
+            <h3>Sump Pump Services</h3>
+            <p>Sump pump service and repair support.</p>
+          </article>
+
+          <article class="service">
+            <div class="icon">10</div>
+            <h3>Gas Line Services</h3>
+            <p>Gas line service where applicable and available.</p>
+          </article>
+
+          <article class="service">
+            <div class="icon">11</div>
+            <h3>Water Line Services</h3>
+            <p>Water line repair and service.</p>
+          </article>
+
+          <article class="service">
+            <div class="icon">12</div>
+            <h3>Hydro Jetting</h3>
+            <p>High-pressure drain and pipe cleaning service.</p>
+          </article>
+
+          <article class="service">
+            <div class="icon">13</div>
+            <h3>Backflow Prevention</h3>
+            <p>Backflow-related plumbing service.</p>
+          </article>
+
+          <article class="service">
+            <div class="icon">14</div>
+            <h3>Emergency Plumbing</h3>
+            <p>Call to check emergency service availability.</p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="why" class="why">
+
+      <div class="section-inner why-grid">
+
+        <div class="why-image"
+             role="img"
+             aria-label="Professional plumbing service">
+        </div>
+
+        <div>
+
+          <div class="eyebrow" style="color:#0b6fd3">
+            Why ProFlow
+          </div>
+
+          <h2>
+            Clear Service. Easy Contact.
+          </h2>
+
+          <p>
+            When you need plumbing service, ProFlow Plumbing keeps the next step simple: review the service you need, call the number, and confirm availability for your ZIP code.
+          </p>
+
+          <div class="checks">
+
+            <div class="check">
+              ✓ Professional Plumbing Service
+            </div>
+
+            <div class="check">
+              ✓ Repair &amp; Installation
+            </div>
+
+            <div class="check">
+              ✓ Multiple Service Areas
+            </div>
+
+            <div class="check">
+              ✓ Phone-Based Contact
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="areas" class="areas">
+
+      <div class="section-inner">
+
+        <div class="section-head">
+
+          <h2>Service Areas</h2>
+
+          <p>
+            Visit a city page for more local information and services.
+          </p>
+
+        </div>
+
+        <div class="area-grid">
+
+          <a class="area" href="houston.html">Houston</a>
+
+          <a class="area" href="dallas.html">Dallas</a>
+
+          <a class="area" href="phoenix.html">Phoenix</a>
+
+          <a class="area" href="denver.html">Denver</a>
+
+          <a class="area" href="san-diego.html">San Diego</a>
+
+          <a class="area" href="nashville.html">Nashville</a>
+
+          <a class="area" href="seattle.html">Seattle</a>
+
+          <a class="area" href="las-vegas.html">Las Vegas</a>
+
+          <a class="area" href="atlanta.html">Atlanta</a>
+
+          <a class="area" href="charlotte.html">Charlotte</a>
+
+          <a class="area" href="chicago.html">Chicago</a>
+
+          <a class="area" href="boston.html">Boston</a>
+
+          <a class="area" href="philadelphia.html">Philadelphia</a>
+
+          <a class="area" href="columbus.html">Columbus</a>
+
+          <a class="area" href="kansas-city.html">Kansas City</a>
+
+          <a class="area" href="sacramento.html">Sacramento</a>
+
+          <a class="area" href="san-antonio.html">San Antonio</a>
+
+          <a class="area" href="austin.html">Austin</a>
+
+          <a class="area" href="tampa.html">Tampa</a>
+
+          <a class="area" href="orlando.html">Orlando</a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact" class="cta">
+
+      <div class="section-inner">
+
+        <h2>Need Plumbing Service?</h2>
+
+        <p>
+          Call ProFlow Plumbing to discuss your plumbing needs and confirm service availability for your area.
+        </p>
+
+        <a class="btn btn-primary" href="tel:+18449604987">
+          Call 844-960-4987
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <div>
+
+        <div class="footer-brand">
+          ProFlow Plumbing
+        </div>
+
+        <div>
+          Professional Plumbing Service &amp; Repair
+        </div>
+
+      </div>
+
+      <div>
+        <a href="tel:+18449604987">
+          844-960-4987
+        </a>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <a class="mobile-call" href="tel:+18449604987">
+    Call ProFlow Plumbing • 844-960-4987
+  </a>
+
+</body>
+</html>
